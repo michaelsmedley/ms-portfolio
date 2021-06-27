@@ -1,0 +1,61 @@
+.with-wave {
+    background-color: var(--brand--secondary);
+    margin-bottom: 0;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+  }
+
+  
+  .with-wave:nth-of-type(2) {
+    background-color: var(--brand--primary);
+    background-image: url("data:image/svg+xml,%3Csvg height='100%25' width='100%25' id='svg' viewBox='0 0 1440 400' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3E%3Cpath d='M 0,400 C 0,400 0,200 0,200 C 125.96172248803828,201.61722488038276 251.92344497607655,203.23444976076553 340,197 C 428.07655502392345,190.76555023923447 478.26794258373207,176.6794258373206 570,191 C 661.7320574162679,205.3205741626794 795.0047846889953,248.04784688995213 900,240 C 1004.9952153110047,231.95215311004787 1081.7129186602872,173.12918660287082 1167,158 C 1252.2870813397128,142.87081339712918 1346.1435406698565,171.43540669856458 1440,200 C 1440,200 1440,400 1440,400 Z' stroke='none' stroke-width='0' fill='%23f4e6d2ff' class='transition-all duration-300 ease-in-out delay-150' transform='rotate(-180 720 200)'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    padding-top: 10vmax;
+  }
+  
+  .with-wave:nth-last-of-type(1) {
+    background: var(--brand--tertiary);
+    color: var(--brand--white);
+    margin-top: 0;
+    padding-bottom: 10vmax;
+    padding-top: var(--space-l);
+  }
+
+  .with-wave:nth-last-of-type(1) a:hover {
+    color: var(--brand--primary);
+  }
+  
+  .with-wave:nth-last-of-type(1)::after {
+    background-image: url("data:image/svg+xml,%3Csvg height='100%25' width='100%25' id='svg' viewBox='0 0 1440 400' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3E%3Cpath d='M 0,400 C 0,400 0,200 0,200 C 125.96172248803828,201.61722488038276 251.92344497607655,203.23444976076553 340,197 C 428.07655502392345,190.76555023923447 478.26794258373207,176.6794258373206 570,191 C 661.7320574162679,205.3205741626794 795.0047846889953,248.04784688995213 900,240 C 1004.9952153110047,231.95215311004787 1081.7129186602872,173.12918660287082 1167,158 C 1252.2870813397128,142.87081339712918 1346.1435406698565,171.43540669856458 1440,200 C 1440,200 1440,400 1440,400 Z' stroke='none' stroke-width='0' fill='%23f4e6d2ff' class='transition-all duration-300 ease-in-out delay-150' transform='rotate(-180 720 200)'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 0 -10vh;
+    background-size: 200vw auto;
+    content: "";
+    display: block;
+    inset: 0;
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+  
+  .with-wave:last-of-type * {
+    color: var(--brand--white);
+  }
+  
+  
+  @media (min-width: 36rem) {
+    .with-wave {
+      background-position: 0 -5vmax;
+      background-size: 120vw auto;
+    }
+
+    .with-wave:nth-last-of-type(1)::after {
+      background-size: 100vw auto;
+    }
+  }
+  @media (min-width: 48rem) {
+    .with-wave {
+      background-position: 0 -10vmax;
+    }
+  }

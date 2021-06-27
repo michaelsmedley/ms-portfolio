@@ -1,0 +1,17 @@
+nav a {
+  font-weight: 620;
+}
+
+.link--btn {
+  background: var(--brand--tertiary);
+  color: var(--brand--white);
+  display: inline-block;
+  font-family: var(--font--header);
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.link--btn:hover {
+  background: var(--brand--tertiary--tint);
+}

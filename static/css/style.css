@@ -1,0 +1,37 @@
+
+/** 1-settings **/
+@import "1-settings/colors.css";
+@import "1-settings/fonts.css";
+@import "1-settings/media-queries.css";
+@import "1-settings/spacing.css";
+@import "1-settings/typography.css";
+
+/** 2-tools **/
+@import "2-tools/alignment.css";
+
+/** 3-generic **/
+@import "3-generic/reset.css";
+@import "3-generic/backgrounds.css";
+@import "3-generic/colors.css";
+
+/** 4-elements **/
+@import "4-elements/base.css";
+@import "4-elements/headers.css";
+@import "4-elements/headings.css";
+@import "4-elements/links.css";
+@import "4-elements/lists.css";
+@import "4-elements/nav.css";
+
+/** 5-skeleton **/
+@import "5-skeleton/container.css";
+@import "5-skeleton/grid.css";
+@import "5-skeleton/layout.css";
+
+/** 6-components **/
+@import "6-components/carousel.css";
+@import "6-components/main-nav.css";
+@import "6-components/with-wave.css";
+
+* {
+    position: relative;
+}
