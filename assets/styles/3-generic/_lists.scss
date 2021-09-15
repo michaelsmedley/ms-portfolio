@@ -1,0 +1,21 @@
+ul {
+  &.listless {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  &.inline {
+    li {
+      display: inline-block;
+
+      & + li {
+          margin-left: $spacing-s;
+      }
+    }
+  }
+}
+
+* + ul {
+    margin-top: $spacing-l;
+}

@@ -1,0 +1,11 @@
+$directions: 'left', 'center', 'right';
+
+@each $dir in $directions {
+  .text-#{$dir} {
+    text-align: #{$dir};
+  }
+}
+
+.align-center {
+  align-items: center;
+}

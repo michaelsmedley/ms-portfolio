@@ -1,0 +1,16 @@
+header {
+  &.site-header {
+    margin: 0 auto $spacing-xxl;
+    padding-top: $spacing-l;
+    width: 90vw;
+
+    @media screen and (min-width: $bp-md) {
+        max-width: 80ch;
+        padding-top: $spacing-xl;
+    }
+
+    @media screen and (min-width: $bp-lg) {
+        padding-top: $spacing-xxl;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+---
+title: Michael Smedley | Front End Web Developer
+description: Hello there I am a description
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" value="{{ description }}" />
+    {% include '_head/og.njk' %}
+    {% include '_head/favicon.njk' %}
+    <link href="/assets/styles/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    {% include '_components/header.njk' %}
+    {{ content | safe }}
+    {% include '_components/footer.njk' %}
+  </body>
+</html>
