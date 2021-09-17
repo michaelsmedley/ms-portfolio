@@ -7,6 +7,7 @@ header {
     @media screen and (min-width: $bp-md) {
         max-width: 80ch;
         padding-top: $spacing-xl;
+        margin-bottom: $spacing-xxl;
     }
 
     @media screen and (min-width: $bp-lg) {
