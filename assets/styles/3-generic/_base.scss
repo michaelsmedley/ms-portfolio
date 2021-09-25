@@ -57,6 +57,12 @@ a {
     }
   }
 
+  &.no-underline {
+    &:after {
+      display: none;
+    }
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     transition: all ease-in-out 0.2s;
   }

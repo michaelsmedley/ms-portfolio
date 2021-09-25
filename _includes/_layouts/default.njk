@@ -16,7 +16,9 @@ description: Michael Smedley is a web developer based in the UK
   </head>
   <body>
     {% include '_components/header.njk' %}
+    <main>
     {{ content | safe }}
+    </main>
     {% include '_components/footer.njk' %}
   </body>
 </html>

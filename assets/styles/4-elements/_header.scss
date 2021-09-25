@@ -14,4 +14,10 @@ header {
         padding-top: $spacing-xxl;
     }
   }
+
+  &.header--main {
+    @media screen and (min-width: $bp-md) {
+      max-width: 60ch;
+    }
+  }
 }

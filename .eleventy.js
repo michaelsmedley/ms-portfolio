@@ -38,4 +38,16 @@ module.exports = function (eleventyConfig) {
   ]);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+  let markdown_o = {
+    html: true,
+    //: add any settings you need
+  };
+
+  eleventyConfig.setLibrary(
+    "md",
+    require("markdown-it")(markdown_o).use(require("markdown-it-attrs"))
+  );
+
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 };
