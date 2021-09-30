@@ -1,10 +1,9 @@
 ---
-layout: _layouts/default.njk
----
-<article>
-<header class="header--main">
-
-# Site Credits
+layout: _layouts/internal.njk
+pagetitle: "Site Credits"
+pagesub: "A list of tools and services used to make this site work!"
+title: "Site Credits - Michael Smedley | Front End Web Developer"
+description: A list of tools and services used to make this site work!
 
 ---
 
@@ -13,8 +12,6 @@ I have spent a lot of time building this site, even going as far as to create a
 
 Here I'd like to give a bit of credit to people whose contributions helped me to get this site finished.
 
-</header>
-<main>
 
 ## In no particular order...
 
@@ -23,6 +20,3 @@ Here I'd like to give a bit of credit to people whose contributions helped me to
 * The colour pallete was generated with [Coolors](https://coolors.co){target="_blank" rel="noopener nofollow"}.
 * SVG waves were generated  with [https://getwaves.io](https://getwaves.io){target="_blank" rel="noopener nofollow"} by [z creative labs](https://www.zcreativelabs.com){target="_blank" rel="noopener nofollow"}.
 * The background waves were generated with [https://svgwave.in](https://svgwave.in){target="_blank" rel="noopener nofollow"} by [Anup Aglawe](https://github.com/anup-a){target="_blank" rel="noopener nofollow"}.
-
-</main>
-</article>
