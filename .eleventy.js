@@ -35,6 +35,8 @@ module.exports = function (eleventyConfig) {
     "ico",
     "svg",
     "webmanifest",
+    "js",
+    "map"
   ]);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
