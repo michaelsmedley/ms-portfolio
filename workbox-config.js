@@ -1,11 +1,11 @@
 module.exports = {
-	globDirectory: 'assets/',
+	globDirectory: '_site/',
 	globPatterns: [
-		'**/*.{png,xml,ico,svg,webmanifest,woff2,scss}'
+		'**/*.{png,xml,ico,svg,webmanifest,woff2,css,js,html,avif,webp}'
 	],
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/
 	],
-	swDest: 'assets/sw.js'
+	swDest: '_site/sw.js'
 };

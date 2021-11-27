@@ -18,8 +18,11 @@ layout: _layouts/default.njk
                 <div>
                 {{ content | safe }}
                 </div>
-                {% image "assets/images/profile.png", "A profile photo of me, with a beard, looking into the distance", "(min-width: 30em) 50vw, 100vw" %}
+                {% image "assets/images/profile.png", "A profile photo of me, with a beard, looking into the distance", "(max-width: 768px) 300px, 300px" %}
             </div>
+        </section>
+        <section class="c-wave-box tertiary sm-col-12">
+            <h2>Latest Notes</h2>
         </section>
     </main>
 </article>

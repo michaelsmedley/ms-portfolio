@@ -9,9 +9,6 @@ description: Michael Smedley is a web developer based in the UK
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ description }}" />
-    <meta name="theme-color" 
-      content="#ecd96f" 
-      media="(prefers-color-scheme: light)">
     {% include '_head/favicon.njk' %}
     <title>{{ title }}</title>
     <link rel="preload" href="/assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
@@ -19,19 +16,32 @@ description: Michael Smedley is a web developer based in the UK
     <link href="/assets/styles/style.css" rel="stylesheet" type="text/css"/>
     {% include '_head/og.njk' %}
     <script>
-    // Check that service workers are supported
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/assets/sw.js');
-      });
-    }
-    </script>
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/assets/sw.js');
+  });
+}
+</script>
   </head>
-  <body>
+  <body class="no-bg body--internal">
     {% include '_components/header.njk' %}
     <main>
+        <article>
+            <header class="header--internal header--transparent full-bleed">
+                <hgroup>
+                    <h1>{{ pagetitle }}</h1>
+                    {% if pagesub %}
+                    <p>{{ pagesub }}</p>
+                    {% endif %}
+                <hr />
+                    </hgroup>
+                </header>
+<main>
     {{ content | safe }}
+    </main>
+        </article>
     </main>
     {% include '_components/footer.njk' %}
   </body>
