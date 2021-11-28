@@ -23,6 +23,19 @@ layout: _layouts/default.njk
         </section>
         <section class="c-wave-box tertiary sm-col-12">
             <h2>Latest Notes</h2>
+            <ol class="c-carousel">
+{%- for post in collections.notes -%}
+  <li class="c-carousel__slide">
+                            <h3><a href="{{post.url}}">{{ post.data.pagetitle}}</a></h3>
+                            <time class="semi-trans">{% niceDate post.date %}</time>
+                            <article>
+                                <p>{{ post.data.pagesub}}</p>
+                            </article>
+                        </li>
+                        
+                        
+{%- endfor -%}
+</ol>
         </section>
     </main>
 </article>

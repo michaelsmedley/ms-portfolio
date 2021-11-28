@@ -1,19 +1,31 @@
 h1 {
   @include mobile-h1;
 
+  hyphens: auto;
+  margin-bottom: $spacing-s;
+
   @media screen and (min-width: $bp-md) {
     @include desktop-h1;
   }
-
-  hyphens: auto;
-  margin-bottom: $spacing-s;
 }
 
 h2 {
   @include mobile-h2;
+  margin-bottom: $spacing-s;
 
   @media screen and (min-width: $bp-md) {
     @include desktop-h2;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+h3 {
+  @include mobile-h3;
+  margin-bottom: $spacing-s;
+
+  @media screen and (min-width: $bp-md) {
+    @include desktop-h3;
+    margin-bottom: $spacing-l;
   }
 }
 
