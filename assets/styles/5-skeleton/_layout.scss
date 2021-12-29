@@ -1,7 +1,0 @@
-header + main {
-  margin-top: $spacing-l;
-
-  @media screen and (min-width: $bp-md) {
-    margin-top: $spacing-xxl;
-  }
-}
