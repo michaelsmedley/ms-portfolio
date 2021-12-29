@@ -67,7 +67,8 @@ body > * {
 
 .site-header > *,
 .site-main > * {
-  margin-top: 2.4rem;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -109,7 +110,7 @@ strong {
   font-weight: inherit;
   text-decoration: underline;
   text-decoration-color: var(--brand--secondary);
-  text-decoration-thickness: 15px;
+  text-decoration-thickness: clamp(10px, 10px + 2vw, 15px);
 }
 
 a {
@@ -123,13 +124,11 @@ a {
 }
 
 .site-header {
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
-  position: sticky;
-  top: 0;
-  background: var(--brand--primary);
   width: 105vw;
   margin-left: -5vw;
+  padding-left: 5vw;
   z-index: 3;
 }
 
@@ -143,17 +142,17 @@ a {
   z-index: 1;
 }
 .vert-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-.vert-list li{
-    display: inline-block;
-    list-style-type: none;
+.vert-list li {
+  display: inline-block;
+  list-style-type: none;
 }
 
 .vert-list li + li {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 /* modern breakpoints for devices */
@@ -175,6 +174,10 @@ a {
   }
 
   .site-footer {
-      text-align: right;
+    text-align: right;
+  }
+  .site-header > *,
+  .site-main > * {
+    margin-top: 2.4rem;
   }
 }
