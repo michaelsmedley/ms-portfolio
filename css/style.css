@@ -88,7 +88,7 @@ h5 {
 
 em {
   background: linear-gradient(
-    to right,
+    to bottom right,
     var(--brand--secondary),
     var(--brand--tertiary)
   );
@@ -102,6 +102,7 @@ em {
   background-attachment: scroll;
   background-blend-mode: normal;
   font-style: normal;
+  display: inline-block;
 }
 
 strong {
@@ -126,10 +127,10 @@ a {
   display: flex;
   position: sticky;
   top: 0;
-  z-index: 1;
   background: var(--brand--primary);
   width: 105vw;
   margin-left: -5vw;
+  z-index: 3;
 }
 
 .site-header .logo {
