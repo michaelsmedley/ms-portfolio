@@ -1,0 +1,38 @@
+/**
+ * Main style compilation
+ **/
+
+ /** settings **/
+ @import "1-settings/colors";
+ @import "1-settings/fonts";
+ @import "1-settings/media-queries";
+ @import "1-settings/spacing";
+
+/** generic **/
+@import "3-generic/reset";
+@import "3-generic/fonts";
+@import "3-generic/base";
+@import "3-generic/lists";
+@import "3-generic/typography";
+
+/** elements **/
+@import "4-elements/header";
+@import "4-elements/footer";
+
+/** skeleton **/
+@import "5-skeleton/container";
+@import "5-skeleton/grid";
+@import "5-skeleton/layout";
+
+/** components **/
+@import "6-components/c-logo";
+@import "6-components/c-wave-box";
+
+/** utilities **/
+@import "7-utilities/alignment";
+@import "7-utilities/display";
+@import "7-utilities/position";
+
+
+
+

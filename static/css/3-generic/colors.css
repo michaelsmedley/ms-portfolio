@@ -1,0 +1,7 @@
+.semi-trans {
+  opacity: 0.5;
+}
+
+.text-white {
+  color: var(--brand-white);
+}

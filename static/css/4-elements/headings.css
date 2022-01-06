@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--brand--black);
+  font-family: var(--font--header);
+  font-variation-settings: "WONK" 1, "SOFT" 100, "wght" 900;
+  hyphens: auto;
+  line-height: 1;
+  -webkit-hyphens: auto;
+}
+
+h1 {
+  font-size: var(--step-5);
+  margin: var(--space-l) 0;
+}
+
+h2 {
+  font-size: var(--step-4);
+  margin: var(--space-m) 0;
+}
